@@ -10,15 +10,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
             pauseMenu.SetActive(true);
-            Debug.Log("Menu Activated");
-        }
-        else
-        {
-            pauseMenu.SetActive(true);
-        }
     }
 
     public void Resume()

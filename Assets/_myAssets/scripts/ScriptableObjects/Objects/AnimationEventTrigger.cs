@@ -13,8 +13,19 @@ public class AnimationEventTrigger : MonoBehaviour
 
     void Start ()
     {
-        dustRight.GetComponent<ParticleSystem>().enableEmission = false;
-        dustLeft.GetComponent<ParticleSystem>().enableEmission = false;
+       dustRight.GetComponent<ParticleSystem>().enableEmission = false;
+       dustLeft.GetComponent<ParticleSystem>().enableEmission = false;
+
+       /* ParticleSystem ps = dustRight.GetComponent<ParticleSystem>();
+        var em = ps.emission;
+        em.enabled = false;
+        ps.Play();
+
+        ParticleSystem ps2 = dustLeft.GetComponent<ParticleSystem>();
+        var em2 = ps2.emission;
+        em2.enabled = false;
+        ps2.Play(); */
+
     }
 
 
@@ -23,7 +34,8 @@ public class AnimationEventTrigger : MonoBehaviour
         src.clip = clip;
         src.pitch = Random.Range(min, max);
         src.Play();
-        dustLeft.GetComponent<ParticleSystem>().enableEmission = true;
+         dustLeft.GetComponent<ParticleSystem>().enableEmission = true;
+        //em2.enabled = true;
         print("Left Foot");
     }
 
