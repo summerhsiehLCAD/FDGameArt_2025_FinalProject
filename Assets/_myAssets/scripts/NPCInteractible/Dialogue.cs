@@ -16,6 +16,10 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
+    public int currentLine;
+
+    public bool dialogueActive;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,12 +32,14 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
-        // Revise this area once raycast has been set up
 
-        if (Input.GetMouseButtonDown(0))
+        if (dialogueActive && Input.GetMouseButtonDown(0))
         {
+            //dialogueBox.SetActive(false);
+            //dialogueActive = false;
+
+           // currentLine++;
+
             if (dialogue.text == lines[index])
             {
                 NextLine();
@@ -45,6 +51,16 @@ public class Dialogue : MonoBehaviour
                 
             }
         }
+
+       /* else if (currentLine >= lines.Length)
+        {
+            dialogueBox.SetActive(false);
+            dialogueActive = false;
+
+            currentLine = 0;
+        }
+
+        dialogue.text = lines[currentLine];*/
     }
 
     void StartDialogue()

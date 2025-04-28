@@ -11,10 +11,11 @@ public class AnimationEventTrigger : MonoBehaviour
     public Transform dustRight;
     public Transform dustLeft;
 
+    
     void Start ()
     {
-       dustRight.GetComponent<ParticleSystem>().enableEmission = false;
-       dustLeft.GetComponent<ParticleSystem>().enableEmission = false;
+      // dustRight.GetComponent<ParticleSystem>().enableEmission = false;
+      // dustLeft.GetComponent<ParticleSystem>().enableEmission = false;
 
        /* ParticleSystem ps = dustRight.GetComponent<ParticleSystem>();
         var em = ps.emission;
@@ -29,7 +30,7 @@ public class AnimationEventTrigger : MonoBehaviour
     }
 
 
-    public void playFootstepLeft()
+   /* public void playFootstepLeft()
     {
         src.clip = clip;
         src.pitch = Random.Range(min, max);
@@ -62,6 +63,6 @@ public class AnimationEventTrigger : MonoBehaviour
 
         dustRight.GetComponent<ParticleSystem>().enableEmission = false;
     }
-
+   */
 
 }

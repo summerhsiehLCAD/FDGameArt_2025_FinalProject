@@ -11,6 +11,6 @@ public class CollectedItems : ScriptableObject
     //This is how you create a list. Notice how the type
     //is specified in the angle brackets (< >).
     //List<BadGuy> badguys = new List<BadGuy>();
-    public List<Collectible> trash = new List<Collectible>();
+    public List<Collectible> npcs = new List<Collectible>();
     
 }
