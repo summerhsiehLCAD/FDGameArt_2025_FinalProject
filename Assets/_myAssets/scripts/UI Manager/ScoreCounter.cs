@@ -12,25 +12,23 @@ public class ScoreCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        //UpdateCounter();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Script how everytime the user interacts with an NPC, the score goes up
         UpdateCounter();
-        //scoreTracker++;
     }
 
-    void ScoreUP()
+    public void SetScore(int newScore)
     {
-        //if bla bla bla blu blu blue
-        scoreTracker++;
+        scoreTracker = newScore;
+        UpdateCounter();
     }
 
-    void UpdateCounter()
+    public void UpdateCounter()
     {
-        scoreDisplay.text = scoreTracker.ToString() + " / 0 ";
+        scoreDisplay.text = scoreTracker.ToString() + " / 9 ";
     }
 }

@@ -21,6 +21,7 @@ public class PlayerInteractible : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log(other.gameObject.tag);
             pressE.SetActive(true);
         }
     }

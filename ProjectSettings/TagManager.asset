@@ -8,6 +8,13 @@ TagManager:
   - npc
   - Hamster
   - npc2
+  - npc3
+  - npc4
+  - npc5
+  - npc6
+  - npc7
+  - npc8
+  - npc9
   layers:
   - Default
   - TransparentFX
