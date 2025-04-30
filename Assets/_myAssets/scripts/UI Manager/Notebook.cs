@@ -14,6 +14,18 @@ public class Notebook : MonoBehaviour
 
     public GameObject turnBack;
 
+    public PlayerInteracts playerIt;
+
+    public GameObject gray1;
+    public GameObject gray2;
+    public GameObject gray3;
+    public GameObject gray4;
+    public GameObject gray5;
+    public GameObject gray6;
+    public GameObject gray7;
+    public GameObject gray8;
+    public GameObject gray9;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreCounter : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class ScoreCounter : MonoBehaviour
     void Update()
     {
         UpdateCounter();
+
+        if (scoreTracker == 9)
+        {
+            EndScreen();
+        }
     }
 
     public void SetScore(int newScore)
@@ -30,5 +36,11 @@ public class ScoreCounter : MonoBehaviour
     public void UpdateCounter()
     {
         scoreDisplay.text = scoreTracker.ToString() + " / 9 ";
+    }
+
+    private void EndScreen()
+    {
+        SceneManager.LoadScene("EndScreen", LoadSceneMode.Additive);
+        Time.timeScale = 1;
     }
 }
