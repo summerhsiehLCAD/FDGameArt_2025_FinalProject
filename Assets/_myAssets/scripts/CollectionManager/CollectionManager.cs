@@ -8,6 +8,8 @@ public class CollectionManager : MonoBehaviour
     public PlayerInteracts playerIt;
     public ScoreCounter scoreCount;
 
+    int initialScore = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,23 +21,12 @@ public class CollectionManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ScoreIncrease()
     {
-        int initialScore = 0;
 
-        if (playerIt.npcSpoken1) initialScore++;
-        if (playerIt.npcSpoken2) initialScore++;
-        if (playerIt.npcSpoken3) initialScore++;
-        if (playerIt.npcSpoken4) initialScore++;
-        if (playerIt.npcSpoken5) initialScore++;
-        if (playerIt.npcSpoken6) initialScore++;
-        if (playerIt.npcSpoken7) initialScore++;
-        if (playerIt.npcSpoken8) initialScore++;
-        if (playerIt.npcSpoken9) initialScore++;
+        initialScore++;
 
         scoreCount.SetScore(initialScore);
-
     }
    
 }

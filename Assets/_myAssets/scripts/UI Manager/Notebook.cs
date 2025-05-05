@@ -35,17 +35,19 @@ public class Notebook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+ 
     }
 
     public void OpenNotebook()
     {
         notebook.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ExitNotebook()
     {
         notebook.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void TurnPageForward()

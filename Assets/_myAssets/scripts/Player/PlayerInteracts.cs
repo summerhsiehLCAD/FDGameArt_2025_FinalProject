@@ -7,6 +7,8 @@ public class PlayerInteracts : MonoBehaviour
 {
     //Dialogue dialogueScript;
 
+    public CollectionManager collectM;
+
     public GameObject playerCone;
 
     public GameObject dialogueBox1;
@@ -41,7 +43,7 @@ public class PlayerInteracts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Cursor.lockState = CursorLockMode.Locked;
     }
     // Update is called once per frame
     void Update()
@@ -109,7 +111,11 @@ public class PlayerInteracts : MonoBehaviour
     {
         Debug.Log("NPC1 Talking");
         dialogueBox1.SetActive(true);
-        npcSpoken1 = true;
+        if (npcSpoken1 == false)
+        {
+            npcSpoken1 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC2()
