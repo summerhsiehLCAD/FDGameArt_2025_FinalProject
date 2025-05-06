@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Quit()
     {
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
     //Make this active when you finish making the Home Menu Scene

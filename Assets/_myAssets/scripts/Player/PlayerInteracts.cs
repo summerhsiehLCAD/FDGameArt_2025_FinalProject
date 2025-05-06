@@ -122,56 +122,88 @@ public class PlayerInteracts : MonoBehaviour
     {
         Debug.Log("NPC2 Talking");
         dialogueBox2.SetActive(true);
-        npcSpoken2 = true;
+        if (npcSpoken2 == false)
+        {
+            npcSpoken2 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC3()
     {
         Debug.Log("NPC3 Talking");
         dialogueBox3.SetActive(true);
-        npcSpoken3 = true;
+        if (npcSpoken3 == false)
+        {
+            npcSpoken3 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC4()
     {
         Debug.Log("NPC4 Talking");
         dialogueBox4.SetActive(true);
-        npcSpoken4 = true;
+        if (npcSpoken4 == false)
+        {
+            npcSpoken4 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC5()
     {
         Debug.Log("NPC5 Talking");
         dialogueBox5.SetActive(true);
-        npcSpoken5 = true;
+        if (npcSpoken5 == false)
+        {
+            npcSpoken5 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC6()
     {
         Debug.Log("NPC6 Talking");
         dialogueBox6.SetActive(true);
-        npcSpoken6 = true;
+        if (npcSpoken6 == false)
+        {
+            npcSpoken6 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC7()
     {
         Debug.Log("NPC7 Talking");
         dialogueBox7.SetActive(true);
-        npcSpoken7 = true;
+        if (npcSpoken7 == false)
+        {
+            npcSpoken7 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC8()
     {
         Debug.Log("NPC8 Talking");
         dialogueBox8.SetActive(true);
-        npcSpoken8 = true;
+        if (npcSpoken8 == false)
+        {
+            npcSpoken8 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     public void NPC9()
     {
         Debug.Log("NPC9 Talking");
         dialogueBox9.SetActive(true);
-        npcSpoken9 = true;
+        if (npcSpoken9 == false)
+        {
+            npcSpoken9 = true;
+            collectM.ScoreIncrease();
+        }
     }
 
     /*public void SetConditionTrue(int conditionIndex)
