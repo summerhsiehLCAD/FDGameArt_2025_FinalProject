@@ -113,8 +113,9 @@ public class PlayerInteracts : MonoBehaviour
         dialogueBox1.SetActive(true);
         if (npcSpoken1 == false)
         {
-            npcSpoken1 = true;
+            
             collectM.ScoreIncrease();
+            npcSpoken1 = true;
         }
     }
 
@@ -124,8 +125,8 @@ public class PlayerInteracts : MonoBehaviour
         dialogueBox2.SetActive(true);
         if (npcSpoken2 == false)
         {
-            npcSpoken2 = true;
             collectM.ScoreIncrease();
+            npcSpoken2 = true;
         }
     }
 
