@@ -40,7 +40,7 @@ public class ScoreCounter : MonoBehaviour
 
     private void EndScreen()
     {
-        SceneManager.LoadScene("EndScreen", LoadSceneMode.Additive);
+        SceneManager.LoadScene("EndScreen");
         Time.timeScale = 1;
     }
 }
