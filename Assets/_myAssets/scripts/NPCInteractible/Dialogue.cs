@@ -7,6 +7,8 @@ using System.IO.Pipes;
 public class Dialogue : MonoBehaviour
 {
     public GameObject dialogueBox;
+
+    public PlayerInteracts playerIn;
     
     public TextMeshProUGUI dialogue;
 
@@ -20,12 +22,15 @@ public class Dialogue : MonoBehaviour
 
     public bool dialogueActive;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
 
         dialogue.text = string.Empty;
         StartDialogue();
+        dialogueActive = true;
 
     }
 
@@ -90,6 +95,8 @@ public class Dialogue : MonoBehaviour
         else
         {
             dialogueBox.SetActive(false);
+            dialogueActive = false;
+            Debug.Log("dialogue is set inactive");
         }
     }
 }

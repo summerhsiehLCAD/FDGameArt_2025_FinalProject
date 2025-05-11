@@ -74,6 +74,7 @@ public class OldManDialogue : MonoBehaviour
         else
         {
             dialogueBox.SetActive(false);
+            dialogueActive = false;
         }
 
     }

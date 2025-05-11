@@ -6,24 +6,36 @@ using UnityEngine.SceneManagement;
 
 public class ScoreCounter : MonoBehaviour
 {
+    [SerializeField]
+    OldManDialogue finishDialogue;
+
+    public GameObject endDialogueBox;
+
     public int scoreTracker;
 
     public TextMeshProUGUI scoreDisplay;
 
+ 
+
     // Start is called before the first frame update
     void Start()
     {
-        //UpdateCounter();
+        UpdateCounter();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         UpdateCounter();
 
         if (scoreTracker == 9)
         {
-            EndScreen();
+           
+
+           // endDialogueBox.SetActive(true);
+
+           // EndScreen();
         }
     }
 

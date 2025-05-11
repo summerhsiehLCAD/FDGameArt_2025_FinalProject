@@ -18,11 +18,14 @@ public class OldManManager : MonoBehaviour
     public GameObject hint8;
     public GameObject hint9;
 
+    public GameObject endDialogue;
+    public bool oldManMActive;
+
 
     // Start is called before the first frame update
     void Start()
     {
-      introDialogue.SetActive(true);
+     // introDialogue.SetActive(true);
     }
 
     public void Hint1()
@@ -61,5 +64,15 @@ public class OldManManager : MonoBehaviour
     public void Hint9()
     {
         hint9.SetActive(true);
+    }
+
+    public void EndDialogue()
+    {
+       if (oldManMActive == false)
+        {
+            oldManMActive = true;
+            endDialogue.SetActive(true);
+        }
+
     }
 }

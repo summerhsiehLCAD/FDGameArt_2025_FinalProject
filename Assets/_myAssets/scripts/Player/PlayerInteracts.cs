@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerInteracts : MonoBehaviour
 {
-    //Dialogue dialogueScript;
+    public NPCDialogueManager dManagerScript;
 
     public CollectionManager collectM;
 
@@ -56,54 +56,6 @@ public class PlayerInteracts : MonoBehaviour
         {
             playerCone.SetActive(false);
         }
-
-       /* if (Input.GetKeyDown(KeyCode.E))
-        {
-            RaycastHit hit;
-
-            if (Physics.Raycast(raycastOrigin.transform.position, raycastOrigin.transform.forward, out hit))
-            {
-                Debug.Log(hit.collider.gameObject.name);
-
-                if (hit.collider.gameObject.tag == "npc")
-                {
-                    NPC1();
-                }
-                else if(hit.collider.gameObject.tag == "npc2")
-                {
-                    NPC2();
-                }
-                else if (hit.collider.gameObject.tag == "npc3")
-                {
-                    NPC3();
-                }
-                else if (hit.collider.gameObject.tag == "npc4")
-                {
-                    NPC4();
-                }
-                else if (hit.collider.gameObject.tag == "npc5")
-                {
-                    NPC5();
-                }
-                else if (hit.collider.gameObject.tag == "npc6")
-                {
-                    NPC6();
-                }
-                else if (hit.collider.gameObject.tag == "npc7")
-                {
-                    NPC7();
-                }
-                else if (hit.collider.gameObject.tag == "npc8")
-                {
-                    NPC8();
-                }
-                else if (hit.collider.gameObject.tag == "npc9")
-                {
-                    NPC9();
-                }
-            }
-
-        }*/
     }
     
 
@@ -111,12 +63,14 @@ public class PlayerInteracts : MonoBehaviour
     {
         Debug.Log("NPC1 Talking");
         dialogueBox1.SetActive(true);
+       // dBox1 = true;
         if (npcSpoken1 == false)
         {
-            
-            collectM.ScoreIncrease();
             npcSpoken1 = true;
+            collectM.ScoreIncrease();
         }
+    
+
     }
 
     public void NPC2()
@@ -125,8 +79,8 @@ public class PlayerInteracts : MonoBehaviour
         dialogueBox2.SetActive(true);
         if (npcSpoken2 == false)
         {
-            collectM.ScoreIncrease();
             npcSpoken2 = true;
+            collectM.ScoreIncrease();
         }
     }
 
