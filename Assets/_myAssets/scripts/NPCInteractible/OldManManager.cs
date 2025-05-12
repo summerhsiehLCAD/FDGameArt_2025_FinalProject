@@ -25,7 +25,7 @@ public class OldManManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-     // introDialogue.SetActive(true);
+      introDialogue.SetActive(true);
     }
 
     public void Hint1()

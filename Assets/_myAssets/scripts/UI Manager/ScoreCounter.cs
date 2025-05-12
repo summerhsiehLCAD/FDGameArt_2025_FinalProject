@@ -9,7 +9,10 @@ public class ScoreCounter : MonoBehaviour
     [SerializeField]
     OldManDialogue finishDialogue;
 
-    public GameObject endDialogueBox;
+    [SerializeField]
+    SceneController sceneController;
+
+    //public GameObject endDialogueBox;
 
     public int scoreTracker;
 
@@ -50,9 +53,5 @@ public class ScoreCounter : MonoBehaviour
         scoreDisplay.text = scoreTracker.ToString() + " / 9 ";
     }
 
-    private void EndScreen()
-    {
-        SceneManager.LoadScene("EndScreen");
-        Time.timeScale = 1;
-    }
+  
 }

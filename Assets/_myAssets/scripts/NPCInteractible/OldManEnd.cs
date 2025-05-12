@@ -10,6 +10,8 @@ public class OldManEnd : MonoBehaviour
 
     public OldManManager oldManM;
 
+    //public bool endingDialogueFinished;
+
     
 
    // public NPCDialogueManager dialogue;
@@ -47,7 +49,6 @@ public class OldManEnd : MonoBehaviour
 
         Debug.Log("No NPC is talking)");
         return false;
-
 
     }
 

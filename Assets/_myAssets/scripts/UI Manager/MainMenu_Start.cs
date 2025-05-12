@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu_Start : MonoBehaviour
 {
-   public void StartGame()
+    [SerializeField]
+    private SceneController controller;
+   
+    
+    public void StartGame()
     {
-        SceneManager.LoadScene("TestDemo_SP24");
+        Debug.Log("starting game");
+        controller.LoadingScene("TestDemo_SP24");
     }
 }

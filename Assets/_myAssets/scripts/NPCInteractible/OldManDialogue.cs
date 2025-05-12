@@ -21,6 +21,7 @@ public class OldManDialogue : MonoBehaviour
     public int currentLine;
 
     public bool dialogueActive;
+    public bool dialogueFinished;
 
     // Start is called before the first frame update
     public void Start()
@@ -75,6 +76,7 @@ public class OldManDialogue : MonoBehaviour
         {
             dialogueBox.SetActive(false);
             dialogueActive = false;
+            dialogueFinished = true;
         }
 
     }
