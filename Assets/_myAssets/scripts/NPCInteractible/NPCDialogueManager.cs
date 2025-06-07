@@ -6,8 +6,6 @@ public class NPCDialogueManager : MonoBehaviour
 {
     public List<GameObject> dBoxes;
 
-  
-
 
     // Start is called before the first frame update
     void Start()
